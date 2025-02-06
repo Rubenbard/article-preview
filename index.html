@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="min-h-screen bg-[#ECF2F8] flex items-center justify-center p-4">
+  <article class="bg-white rounded-2xl shadow-lg max-w-[730px] flex flex-col md:flex-row overflow-hidden">
+    <!-- Image section -->
+    <div class="w-full md:w-[285px] h-[200px] md:h-auto relative">
+      <img src="./images/drawers.jpg" 
+           alt="Green drawers with decorations" 
+           class="object-cover w-full h-full"
+      >
+    </div>
+
+    <!-- Content section -->
+    <div class="p-8 flex flex-col justify-between flex-1">
+      <div>
+        <h1 class="text-[16px] md:text-[20px] font-bold text-[#48556A] leading-tight mb-3 md:mb-4">
+          Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home
+        </h1>
+
+        <p class="text-[13px] text-[#6E8098] mb-6 leading-relaxed">
+          Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I've got some simple tips 
+          to help you make any room feel complete.
+        </p>
+      </div>
+
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <img src="./images/avatar-michelle.jpg" 
+               alt="Michelle Appleton" 
+               class="w-10 h-10 rounded-full mr-4">
+          <div>
+            <h2 class="text-[13px] font-bold text-[#48556A]">Michelle Appleton</h2>
+            <p class="text-[13px] text-[#9DAEC2]">28 Jun 2020</p>
+          </div>
+        </div>
+
+        <button class="bg-[#ECF2F8] p-2 rounded-full hover:bg-[#6E8098] hover:text-white transition-colors">
+          <img src="./images/icon-share.svg" alt="Share" class="w-4 h-4">
+        </button>
+      </div>
+    </div>
+  </article>
+
+  <div class="attribution fixed bottom-4 text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
