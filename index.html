@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Article preview component</title>
 
@@ -39,7 +42,7 @@
         </p>
       </div>
 
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between" id="avatar-share">
         <div class="flex items-center">
           <img src="./images/avatar-michelle.jpg" 
                alt="Michelle Appleton" 
@@ -50,9 +53,25 @@
           </div>
         </div>
 
-        <button class="bg-[#ECF2F8] p-2 rounded-full hover:bg-[#6E8098] hover:text-white transition-colors">
+        <button data-tooltip-target="tooltip-default"  data-tooltip-trigger="click" class="bg-grey-900 p-2 rounded-full hover:bg-[#6E8098] hover:text-white transition-colors" id="share-button">
           <img src="./images/icon-share.svg" alt="Share" class="w-4 h-4">
         </button>
+        <div id="tooltip-default" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-600 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+          <div class="flex items-center gap-4">
+            <h1 class="text-[#9DAEC2] uppercase tracking-[5px] text-xs">Share</h1>
+            <div class="flex gap-4">
+              <img src="./images/icon-facebook.svg" alt="Facebook">
+              <img src="./images/icon-twitter.svg" alt="Twitter">
+              <img src="./images/icon-pinterest.svg" alt="Pinterest">
+            </div>
+          </div>
+  
+          <!-- Right element -->
+           <div class="md: hidden bg-gray-400 rounded-full p-2" id="share-button-active">
+          <img src="./images/icon-share.svg" alt="Share">
+          </div>
+          <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
       </div>
     </div>
   </article>
@@ -61,5 +80,9 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+
+  <script src="./main.js"></script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+
+@media (min-width: 768px) {
+    
+.speech-bubble {
+	background: #48556A;
+	border-radius: 10px;
+	padding: 1rem;
+    top:50%;
+    left:75%;
+}
+
+.speech-bubble.hidden {
+	display: none;
+}
+
+.speech-bubble:not(.hidden) {
+	display: flex; /* Show when not hidden */
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-top-color: #48556A;
+	border-bottom: 0;
+	margin-left: -10px;
+    margin-bottom: -20px;
+}
+
+/* Ensure avatar section is always visible on desktop */
+#avatar-share {
+	display: flex !important;
+}
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+	#share-container:not(.hidden) {
+		display: flex;
+	}
+	
+	#share-container.hidden {
+		display: none;
+	}
+}
