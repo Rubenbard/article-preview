@@ -41,9 +41,6 @@
 .min-h-screen {
   min-height: 100vh;
 }
-.w-\[calc\(100\%\+4rem\)\] {
-  width: calc(100% + 4rem);
-}
 .w-full {
   width: 100%;
 }
@@ -53,14 +50,8 @@
 .flex-1 {
   flex: 1;
 }
-.resize {
-  resize: both;
-}
 .flex-col {
   flex-direction: column;
-}
-.flex-row {
-  flex-direction: row;
 }
 .items-center {
   align-items: center;
@@ -76,9 +67,6 @@
 }
 .rounded-full {
   border-radius: calc(infinity * 1px);
-}
-.bg-\[\#48556A\] {
-  background-color: #48556A;
 }
 .bg-\[\#ECF2F8\] {
   background-color: #ECF2F8;
